@@ -6,10 +6,11 @@ public class ReverseTheStringWithPreservingThePositionOfSpaces {
 		// TODO Auto-generated method stub
 
 		/*
-		 * InPut = I Am Not String
-		 * Output = g ni rtS toNmAI
+		 * InPut = I Am Not String Output = g ni rtS toNmAI
 		 * 
-		 *  Reference Tutorial = https://javaconceptoftheday.com/how-to-reverse-the-string-with-preserving-the-position-of-spaces/
+		 * Reference Tutorial =
+		 * https://javaconceptoftheday.com/how-to-reverse-the-string-with-
+		 * preserving-the-position-of-spaces/
 		 */
 
 		String Original = "I Am Not String";
@@ -24,12 +25,11 @@ public class ReverseTheStringWithPreservingThePositionOfSpaces {
 
 		for (int i = 0; i < ch.length; i++) {
 
-			if (ch[i] != null) { //Random Condition Added to go into the Loop
-				for (int j = 0; j < ch[i].length(); j++) {
-					System.out.print(afterRS[temp]);
-					temp--;
-				}
+			for (int j = ch[i].length() - 1; j >= 0; j--) {
+				System.out.print(afterRS[temp]);
+				temp--;
 			}
+
 			System.out.print(" ");
 
 		}

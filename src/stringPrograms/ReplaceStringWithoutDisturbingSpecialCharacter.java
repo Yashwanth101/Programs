@@ -5,7 +5,7 @@ public class ReplaceStringWithoutDisturbingSpecialCharacter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s = "Pa$$w0rd";
+		String s = "Pa$$w!rd";
 
 		String specialCharacters = s.replaceAll("[^@#$%^&*()!_+\\-=\\[\\]{};':\"\\\\|,.<>\\/? 0-9]", "");
 		String alphabets = s.replaceAll("[^a-zA-Z]", "");

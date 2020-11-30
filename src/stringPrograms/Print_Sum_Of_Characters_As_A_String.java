@@ -19,7 +19,9 @@ public class Print_Sum_Of_Characters_As_A_String {
 		String s = "aabbbbbcccdde";
 		
 		//Method - 1
-		/*int temp = s.length()-2;
+		int temp = s.length()-2;
+		System.out.println(temp);
+		System.out.println(s.charAt(temp));
 
 		int count = 1;
 
@@ -33,17 +35,18 @@ public class Print_Sum_Of_Characters_As_A_String {
 			}
 			
 			while(i==temp){
+				
 				System.out.println("Alphabet is "+s.charAt(i+1) +"Count is: "+count);
 				count = 1; 
 				i++;
 			}
 
-		}*/
+		}
 		
 		
 		//Method - 2
 		
-		LinkedHashMap<Character, Integer> hmap = new LinkedHashMap<>();
+		/*LinkedHashMap<Character, Integer> hmap = new LinkedHashMap<>();
 		
 		for(Character c:s.toCharArray()){
 			Integer count = hmap.get(c);
@@ -60,7 +63,7 @@ public class Print_Sum_Of_Characters_As_A_String {
 		
 		for(Map.Entry<Character, Integer> map:hmap.entrySet()){
 			System.out.print(map.getValue()+""+map.getKey());
-		}
+		}*/
 
 	}
 

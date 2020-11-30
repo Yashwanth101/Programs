@@ -24,7 +24,7 @@ public class RotateAnArray_Right {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        int a[] = {1,2,3,4,5,6,7};
+        int a[] = {1,2,3,4,5};
 		RotateAnArray_Right r = new RotateAnArray_Right();
 		r.rotate(a, 4);
 		System.out.println(Arrays.toString(a));

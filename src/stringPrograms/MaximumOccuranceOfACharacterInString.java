@@ -23,13 +23,13 @@ public class MaximumOccuranceOfACharacterInString {
 		for(Character c:ch){
 			Integer io = m.get(c);
 			if (io==null) {
+				//Option 1 to display the Min and Max Repeated character
 				m.put(c, 1);
 			}else{
 				m.put(c, ++io);
 			}
 		}
 		
-		//Option 1 to display the Min and Max Repeated character
 		
 		LinkedList<Integer> ll = new LinkedList<>(m.values());
 		Collections.sort(ll);

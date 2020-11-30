@@ -18,7 +18,7 @@ public class MostCommonWordExceptTheBannedWord {
 		 */
 
 		String s = "Bob hit a ball, the hit BALL flew far after it was hit.";
-		String banned_word = "banned";
+		String banned_word = "ball";
 
 		LinkedHashMap<String, Integer> hmap = new LinkedHashMap<>();
 

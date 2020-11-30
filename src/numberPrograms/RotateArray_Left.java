@@ -25,9 +25,9 @@ public class RotateArray_Left {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int a[] = { -1, -100, 3, 99 };
+		int a[] = { 1,2,3,4,5 };
 		RotateArray_Left r = new RotateArray_Left();
-		r.reverse(a, 0, 1, 2);
+		r.reverse(a, 0, 1, 1);
 		System.out.println(Arrays.toString(a));
 
 	}

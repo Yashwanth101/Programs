@@ -21,7 +21,9 @@ public class MostRepeatedWordInATextFile {
 		String word = "";
 
 		while ((line = br.readLine()) != null) {
+			if(!line.isEmpty()){
 			word += line;
+			}
 		}
 
 		String words[] = word.split(" ");
@@ -29,13 +31,15 @@ public class MostRepeatedWordInATextFile {
 
 		for (String w : words) {
 			Integer count = hmap.get(w);
-			if (!(w.isEmpty())) {
-				if (count == null) {
-					hmap.put(w, 1);
-				} else {
-					hmap.put(w, ++count);
-				}
+			   if (!w.isEmpty()) {
+				   if (count == null) {
+						hmap.put(w, 1);
+					} else {
+						hmap.put(w, ++count);
+					}
+				
 			}
+				
 		}
 
 		System.out.println(hmap);

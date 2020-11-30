@@ -6,6 +6,7 @@ public class NumberOfVowelsAndConstantsInString {
 		// TODO Auto-generated method stub
 		
 		String s = "Yashwanth123!@#";
+	
 		
 		int vowels = 0, constants=0;
 		
