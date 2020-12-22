@@ -13,8 +13,9 @@ public class Check_If_An_Array_Contains_A_Given_Value {
 	    	  
 	    	  if(myArray[i]==num){
 	    		  isNumberPresent = true;
-	    		  
+	    		  break;
 	    	  }
+	    	  
 	    	  
 	      }
 	      

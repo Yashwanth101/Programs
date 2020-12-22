@@ -1,5 +1,8 @@
 package stringPrograms;
 
+import java.util.ArrayList;
+import java.util.ListIterator;
+
 /*
  *  1. Validate length of Both the Strings, if not equal, return false
  * 
@@ -46,6 +49,8 @@ public class Anagram {
 		} else {
 			System.out.println("Not Anagram");
 		}
+		
+		
 	}
 
 }

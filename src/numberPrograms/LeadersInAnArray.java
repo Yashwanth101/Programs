@@ -1,6 +1,9 @@
 package numberPrograms;
 
 import java.util.LinkedHashMap;
+
+// The Numbers after the current number should be less than the current number
+
 import java.util.Map;
 
 public class LeadersInAnArray {

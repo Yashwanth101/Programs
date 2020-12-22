@@ -1,38 +1,67 @@
 package stringPrograms;
 
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 
 public class LongestSubStringWithOutRepeatedCharacters {
 
-	public static int longestSubString(String s) {
+	static void longestSubstring(String inputString) {
+		// Convert inputString to charArray
 
-		int i = 0;
-		int j = 0;
-		int max = 0;
+		char[] charArray = inputString.toCharArray();
 
-		HashSet<Character> hashSet = new HashSet<>();
+		// Initialization
 
-		while (j < s.length()) {
+		String longestSubstring = null;
 
-			if (!hashSet.contains(s.charAt(j))) {
-				hashSet.add(s.charAt(j));
-				j++;
-				max = Math.max(hashSet.size(), max);
-			} else {
-				hashSet.remove(s.charAt(i));
-				i++;
+		int longestSubstringLength = 0;
+
+		// Creating LinkedHashMap with characters as keys and their position as
+		// values.
+
+		LinkedHashMap<Character, Integer> charPosMap = new LinkedHashMap<Character, Integer>();
+
+		// Iterating through charArray
+
+		for (int i = 0; i < charArray.length; i++) {
+			char ch = charArray[i];
+
+			// If ch is not present in charPosMap, adding ch into charPosMap
+			// along with its position
+
+			if (!charPosMap.containsKey(ch)) {
+				charPosMap.put(ch, i);
 			}
 
-		}
-		System.out.println(hashSet);
-		return max;
+			// If ch is already present in charPosMap, reposioning the cursor i
+			// to the position of ch and clearing the charPosMap
 
+			else {
+				i = charPosMap.get(ch);
+
+				charPosMap.clear();
+			}
+
+			// Updating longestSubstring and longestSubstringLength
+
+			if (charPosMap.size() > longestSubstringLength) {
+				longestSubstringLength = charPosMap.size();
+
+				longestSubstring = charPosMap.keySet().toString();
+			}
+		}
+
+		System.out.println("Input String : " + inputString);
+
+		System.out.println("The longest substring : " + longestSubstring);
+
+		System.out.println("The longest Substring Length : " + longestSubstringLength);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println(longestSubString("abcabcdef"));
+		longestSubstring("javaconceptoftheday");
 
 	}
 

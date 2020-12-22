@@ -19,28 +19,25 @@ public class Print_Sum_Of_Characters_As_A_String {
 		String s = "aabbbbbcccdde";
 		
 		//Method - 1
-		int temp = s.length()-2;
-		System.out.println(temp);
-		System.out.println(s.charAt(temp));
-
-		int count = 1;
-
-		for (int i = 0; i < s.length() - 1; i++) {
-
-			if (s.charAt(i) == s.charAt(i + 1)) {
-				count++;
-			}else{
-				System.out.println("Alphabet is "+s.charAt(i) +"Count is: "+count);
-				count = 1; 
+		
+		while(s.length()>=1){
+			
+			char c = s.charAt(0);
+			
+			int count = 0;
+			
+			for(int i=0;i<s.length();i++){
+				
+				if(c==s.charAt(i)){
+					count++;
+				}
+				
 			}
 			
-			while(i==temp){
-				
-				System.out.println("Alphabet is "+s.charAt(i+1) +"Count is: "+count);
-				count = 1; 
-				i++;
-			}
-
+			System.out.print(String.valueOf(count)+String.valueOf(c));
+			s= s.replaceAll(String.valueOf(c), "");
+			
+			
 		}
 		
 		

@@ -6,7 +6,8 @@ public class ReverseTheStringWithPreservingThePositionOfSpaces {
 		// TODO Auto-generated method stub
 
 		/*
-		 * InPut = I Am Not String Output = g ni rtS toNmAI
+		 * InPut = I Am Not String 
+		 * Output = g ni rtS toNmAI
 		 * 
 		 * Reference Tutorial =
 		 * https://javaconceptoftheday.com/how-to-reverse-the-string-with-

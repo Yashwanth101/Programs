@@ -5,7 +5,7 @@ public class MaxConsecutiveOnesInAnArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] a = { 1, 1, 0,1,1,1 };
+		int[] a = {1, 1, 0,1, 1, 1};
 		int temp = 0;
 		int count = 0;
 
