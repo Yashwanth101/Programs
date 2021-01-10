@@ -1,11 +1,11 @@
 package stringPrograms;
 
-public class ReplaceStringWithoutDisturbingSpecialCharacter {
+public class ReverseStringWithoutDisturbingSpecialCharacter {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s = "Pa$$w!rd";
+		String s = "P@$$w!rd";
 
 		String specialCharacters = s.replaceAll("[^@#$%^&*()!_+\\-=\\[\\]{};':\"\\\\|,.<>\\/? 0-9]", "");
 		String alphabets = s.replaceAll("[^a-zA-Z]", "");

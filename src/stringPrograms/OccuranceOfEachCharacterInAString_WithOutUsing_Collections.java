@@ -28,7 +28,7 @@ public class OccuranceOfEachCharacterInAString_WithOutUsing_Collections {
 				System.out.println("Count of " + startIndex + " is: " + count);
 			}
 
-			s = s.replace(Character.toString(startIndex), "");
+			s = s.replace(String.valueOf(startIndex), "");
 
 		}
 

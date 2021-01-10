@@ -5,7 +5,7 @@ public class Program_to_Remove_Duplicate_Characters_From_Word_Without_Using_Coll
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s = "abcabcabcabcd".toLowerCase();
+		String s = "banancas".toLowerCase();
 		StringBuilder sb = new StringBuilder();
 
 		while (s.length() >= 1) {
@@ -14,18 +14,20 @@ public class Program_to_Remove_Duplicate_Characters_From_Word_Without_Using_Coll
 
 			int count = 0;
 
-			for (int i = 0; i < s.length(); i++) {
+			for (int i = 1; i < s.length(); i++) {
 
 				if (c == s.charAt(i)) {
 					sb.append(c);
 					count++;
-					s = s.replace(String.valueOf(c), "");		
-				}
-
-				if (count == 0)
-					sb.append(c);
+					s = s.replace(String.valueOf(c), "");	
+					break;
+				}	
 
 			}
+			
+			if (count == 0)
+				sb.append(c);
+			    s = s.replace(String.valueOf(c), "");	
 
 		}
 

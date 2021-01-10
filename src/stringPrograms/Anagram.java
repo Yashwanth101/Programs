@@ -5,7 +5,8 @@ import java.util.ListIterator;
 
 /*
  *  1. Validate length of Both the Strings, if not equal, return false
- * 
+ * An anagram of a string is another string that contains the same characters, 
+ * only the order of characters can be different.
  * 
  */
 

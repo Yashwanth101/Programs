@@ -21,7 +21,7 @@ public class Program_To_Find_The_Percentage_Of_UppercaseLetters_LowercaseLetters
 	    
 	    //var pattern = 
 	    
-	   int percentageOfSpecialCharacters=(s.replaceAll("[^@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/? ]", "")).length();
+	   int percentageOfSpecialCharacters=(s.replaceAll("\\w", "")).length();
 	    System.out.println((percentageOfSpecialCharacters*100)/s.length());
 	    
 	    

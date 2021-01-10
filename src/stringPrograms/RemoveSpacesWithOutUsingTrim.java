@@ -36,6 +36,8 @@ public class RemoveSpacesWithOutUsingTrim {
 		
 	
 		System.out.println(str.substring(startIndex, lastIndex+1));
+		
+
 
 	}
 

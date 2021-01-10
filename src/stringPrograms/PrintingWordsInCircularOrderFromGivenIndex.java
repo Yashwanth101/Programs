@@ -26,7 +26,7 @@ public class PrintingWordsInCircularOrderFromGivenIndex {
 		
 		String arr[] = s.split(" ");
 		
-		int index = 1;
+		int index = 2;
 		
 		for(int i=index;i<arr.length;i++){
 			

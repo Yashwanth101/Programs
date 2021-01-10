@@ -34,8 +34,9 @@ public class SumOfNumbersToLeftIsEqualToSumInRight {
 
 				for (int k = i + 1; k < a.length; k++)
 					Rsum += a[k];
-				for (int h = i; h >= 0; h--)
+				for (int h=0;h<=i;h++){
 					Lsum += a[h];
+				}
 
 				if (Lsum == Rsum) {
 					left = Arrays.copyOfRange(a, 0, i+1);

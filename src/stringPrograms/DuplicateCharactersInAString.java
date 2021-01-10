@@ -22,8 +22,6 @@ public class DuplicateCharactersInAString {
 			}
 		}
 		
-		//Set<Entry<Character, Integer>> set = lhm.entrySet();
-		
 		for(Map.Entry<Character, Integer> map : lhm.entrySet()){
 			if(map.getValue()>1){
 				System.out.println(map.getKey());
