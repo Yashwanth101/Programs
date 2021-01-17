@@ -19,7 +19,7 @@ public class Testtt {
 		
 		
 		
-		/*String s = "Yashwanth";
+		String s = "Yashwanth";
 		StringBuilder sb = new StringBuilder();
 		
 		HashSet<Character> set = new HashSet<>();
@@ -43,7 +43,7 @@ public class Testtt {
 			
 		}
 		
-		System.out.println(sb);*/
+		System.out.println(sb);
 		
 		
 		int a[] = {2, 6, 3, 9, 11};

@@ -22,15 +22,11 @@ public class TwoSum {
 		int target = 50;
 		
 		for(int i=0;i<a.length;i++){
-			
-			for(int j=i+1;j<a.length;j++){
-				
-				if(a[j]==target-a[i]){
+			for(int j=0;j<a.length;j++){
+				if(a[i]+a[j]==target){
 					System.out.println(a[i]+" "+a[j]);
 				}
-				
 			}
-			
 		}
 		
 		// Using Collections

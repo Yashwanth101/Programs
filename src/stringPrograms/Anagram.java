@@ -14,8 +14,7 @@ public class Anagram {
 
 	public static boolean validateAnagram(String str1, String str2) {
 
-		if (str1.length() != str2.length())
-			return false;
+		if (str1.length() != str2.length()) return false;
 
 		int[] str1Array = new int[256];
 

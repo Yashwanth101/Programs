@@ -28,26 +28,7 @@ public class DifferenceBetweenTwoTimeStamps {
         long diffSeconds = diff / 1000 % 60;
         System.out.println(diffMin);*/
 		
-		String s = "mAkE SeleNIUM eaSY";
 		
-		StringBuilder sb = new StringBuilder();
-		
-		
-		for(char c:s.toCharArray()){
-			
-			int index = (int)c;
-			
-			if(index>=65 && index<=90){
-				sb.append(String.valueOf(c).toLowerCase());
-			}else if (index>=97 && index<=122){
-				sb.append(String.valueOf(c).toUpperCase());
-			}else{
-				sb.append(" ");
-			}
-			
-		}
-		
-		System.out.println(sb);
         
         
 		

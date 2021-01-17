@@ -12,9 +12,7 @@ public class Capitalize_First_Character_Of_Each_Word_In_A_String_Sentence {
 		
 		for(int i=0;i<split.length;i++){
 			
-			String ss = split[i].substring(0,1).toUpperCase();
-			
-			System.out.print(ss+split[i].substring(1)+" ");
+			System.out.print(split[i].substring(0,1).toUpperCase()+split[i].substring(1)+" ");
 			
 			
 		}

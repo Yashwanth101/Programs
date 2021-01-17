@@ -24,17 +24,24 @@ public class Find_A_Missing_Number_In_An_Integer_Array_Between_N_Numbers {
 		}
 		return sum;
 	}
+	
+	public static int finalVal(int[] a){
+		int x;
+		
+		if((x = sumOfnumbers(8)- sumOfNumbersInAnArray(a))!=0){
+			return x;
+		}
+		return 0;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		int[] a = { 1, 4, 5, 3, 2, 8, 6 };
 
-		// System.out.println(sumOfnumbers(8)- sumOfNumbersInAnArray(a));
+		System.out.println(finalVal(a));
 
-		// Find Missing Number in a Sorted Array
-
-		int b[] = { 1, 3, 4, 5, 6, 7, 10 };
+	/*	int b[] = { 1, 3, 4, 5, 6, 7, 10 };
 
 		int count = 1;
 
@@ -50,7 +57,7 @@ public class Find_A_Missing_Number_In_An_Integer_Array_Between_N_Numbers {
 			
 
 		}
-
+*/
 	}
 
 }

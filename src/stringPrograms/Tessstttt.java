@@ -7,7 +7,7 @@ public class Tessstttt {
 		
 		//Replace Space with %20
 		String str = "Java is Great";
-		System.out.println(str.replaceAll("\\s+", "%20"));
+		System.out.println(str.replaceAll("\\s", "%20"));
 		
 		
 		// Toggle Each word in Java

@@ -16,7 +16,7 @@ public class MaximumOccuranceOfACharacterInString {
 		
 		//How to find the maximum occurring character in given String? _ With Collection
 		
-		String s = "aabbbccccbbccccc";
+		String s = "aabbbccccbbcccccd";
 		char[] ch = s.toCharArray();
 		LinkedHashMap<Character, Integer> m = new LinkedHashMap<Character, Integer>();
 		//char[] ch = s.toCharArray();
@@ -30,10 +30,12 @@ public class MaximumOccuranceOfACharacterInString {
 			}
 		}
 		
+		System.out.println(m);
+		
 		
 		LinkedList<Integer> ll = new LinkedList<>(m.values());
 		Collections.sort(ll);
-		int min = ll.getFirst();
+		int Smin = ll.get(1);
 		int max = ll.getLast();
 		
 		for(Map.Entry<Character, Integer> l:m.entrySet()){
@@ -42,10 +44,20 @@ public class MaximumOccuranceOfACharacterInString {
 			}
 		}
 		
+		// Minimum Occurance Of a character
+		
+		for(Map.Entry<Character, Integer> l1:m.entrySet()){
+			if(l1.getValue()==Smin){
+				System.out.println("Least Repeated:"+l1.getKey());
+			}
+		}
+		
+		
+		
 		
 		//How to find the maximum occurring character in given String? _ Without Collection 
 		
-		int max1 = 0;
+		/*int max1 = 0;
 		int temp =0;
 		char ch2 = ' ';
 		
@@ -65,7 +77,7 @@ public class MaximumOccuranceOfACharacterInString {
 			temp=0;
 			
 		}
-		System.out.println(ch2);
+		System.out.println(ch2);*/
 			
 		
 		

@@ -36,6 +36,8 @@ public class AppendAStringToATextFile {
 			
 		}
 		
+		System.out.println(map);
+		
 		for(Entry<Integer, Integer> fm:map.entrySet()){
 			
 			if(fm.getValue()>1){
