@@ -24,8 +24,6 @@ public class FindNonRepeatedElementInAnArray {
 			
 			if(isNonRepeated==false){
 				System.out.println(a[i]);
-			}else{
-				
 			}
 			
 		}

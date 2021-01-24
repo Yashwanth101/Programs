@@ -11,7 +11,7 @@ import java.util.Map;
  * 
  */
 
-public class Print_Sum_Of_Characters_As_A_String {
+public class Print_Count_Of_Each_Character_Along_Character {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

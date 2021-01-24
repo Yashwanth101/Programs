@@ -1,5 +1,7 @@
 package stringPrograms;
 
+import java.util.HashSet;
+
 public class NumberOfVowelsAndConstantsInString {
 
 	public static void main(String[] args) {
@@ -23,6 +25,36 @@ public class NumberOfVowelsAndConstantsInString {
 		}
 		
 		System.out.println("Vowels Count: "+vowels+" Constants Count: "+constants);
+		
+		
+		
+		// Print String by removing the vowels
+		
+		String str = "Yashwanth";
+		StringBuilder sb = new StringBuilder();
+		
+		HashSet<Character> set = new HashSet<>();
+		set.add('a');
+		set.add('e');
+		set.add('i');
+		set.add('o');
+		set.add('u');
+		set.add('A');
+		set.add('E');
+		set.add('I');
+		set.add('O');
+		set.add('U');
+		
+		
+		for(int i=0;i<str.length();i++){
+			
+			if(!set.contains(str.charAt(i))){
+				sb.append(str.charAt(i));
+			}
+			
+		}
+		
+		System.out.println(sb);
 		
 	
 		

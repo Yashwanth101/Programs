@@ -25,7 +25,7 @@ public class Remove_Duplicate_Elements_From_Array {
         			
         			noOfUniqueElements--;
         			
-        			j--;
+        			break;
         			
         		}
         		
@@ -88,6 +88,7 @@ public class Remove_Duplicate_Elements_From_Array {
 		System.out.println(s);*/
 		
 		 removeDuplicates(new int[] {4, 3, 2, 4, 9, 2});
+		 
 		
 
 	}

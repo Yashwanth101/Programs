@@ -14,9 +14,9 @@ public class Find_Continuous_SubArray_Whose_Sum_Is_Equal_To_Given_Number {
 
 		for (int i = 0; i < a.length; i++) {
 
-			int sum = 0;
+			int sum = a[i];
 
-			for (int j = i; j < a.length; j++) {
+			for (int j = i+1; j < a.length; j++) {
 
 				sum += a[j];
 

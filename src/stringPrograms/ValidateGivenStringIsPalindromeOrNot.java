@@ -1,5 +1,7 @@
 package stringPrograms;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -50,11 +52,13 @@ public class ValidateGivenStringIsPalindromeOrNot {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		if (valPalindrome("abcd")){
+		if (valPalindrome("wow")){
 			System.out.println("Its Palindrome"); 
 		}else{
 			System.out.println("Not Palindrome");;
 		}
+		
+		
 		
 		
 		

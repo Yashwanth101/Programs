@@ -16,7 +16,7 @@ public class MaximumOccuranceOfACharacterInString {
 		
 		//How to find the maximum occurring character in given String? _ With Collection
 		
-		String s = "aabbbccccbbcccccd";
+		String s = "aabbbccccbbcccccde";
 		char[] ch = s.toCharArray();
 		LinkedHashMap<Character, Integer> m = new LinkedHashMap<Character, Integer>();
 		//char[] ch = s.toCharArray();

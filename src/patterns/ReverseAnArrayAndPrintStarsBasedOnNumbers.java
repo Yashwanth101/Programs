@@ -1,5 +1,13 @@
 package patterns;
 
+/*
+[4, 3, 2, 1]
+$$$$321
+$$$$$$$21
+$$$$$$$$$1
+$$$$$$$$$$
+ */
+
 import java.util.Arrays;
 
 public class ReverseAnArrayAndPrintStarsBasedOnNumbers {

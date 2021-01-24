@@ -65,6 +65,12 @@ public static HashMap<Integer, String> sortByValue(HashMap<Integer, String> hm){
 		
 		System.out.println(al);
 		
+		HashMap<Integer, String> map2 = new HashMap<>();
+		map2.put(1, "b");
+		map2.put(2, "a");
+		map2.put(3, "d");
+		map2.put(4, "c");
+		
 		Map<Integer, String> hm1 = sortByValue(map2); 
 		for (Map.Entry<Integer, String> en : hm1.entrySet()) { 
 	        System.out.println("Key = " + en.getKey() +  

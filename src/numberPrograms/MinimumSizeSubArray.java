@@ -1,37 +1,51 @@
 package numberPrograms;
 
+import java.util.Arrays;
+
 //Refer to Video -- https://www.youtube.com/watch?v=jKF9AcyBZ6E&ab_channel=NickWhite
 
 
 
 public class MinimumSizeSubArray {
 	
-	public static int minSize(int s, int a[]){
-		int sum = 7;
-		int total_count = 0;
-		int result = Integer.MAX_VALUE;
-		int left = 0;
+	public static void minSize(int s, int a[]){
 		
+		int temp = Integer.MAX_VALUE;
 		for(int i=0;i<a.length;i++){
-			total_count+=a[i];
-			
-			while(total_count>=sum){
-				result = Math.min(result, i+1-left);
-				total_count -= a[left];
-				left++;	
+			int sum = 0;
+			int count = 0;
+			for (int j=i;j<a.length;j++){
+				sum+=a[j];
+				count++;
+				if(sum>s){
+					if(temp>count){
+						temp = count;
+					}
+				  System.out.println(Arrays.toString(Arrays.copyOfRange(a, i, j+1)));
+				  break;
+				  
+				}
+				
 			}
+			
+			
+			
+			
 		}
-		return (result!=Integer.MAX_VALUE)?result:0;
+		
+		System.out.println(temp);
+		
+		
 		
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a[] = {2,3,1,2,4,3};
+		int a[] = {1, 2, 4};
 		
-		int b = minSize(7, a);
-		System.out.println(b);
+		minSize(51, a);
+		
 		
 		
 

@@ -11,8 +11,8 @@ public class FindAllSubArraysWithSumIsEqualTo_0 {
 		
 		
 		for(int i=0;i<arr.length;i++){
-			int sum = 0;
-			for(int j=i;j<arr.length;j++){
+			int sum = arr[i];
+			for(int j=i+1;j<arr.length;j++){
 				sum = sum+arr[j];
 				if(arr[i]==0||sum==0){
 					System.out.println(Arrays.toString(Arrays.copyOfRange(arr, i, j+1)));
