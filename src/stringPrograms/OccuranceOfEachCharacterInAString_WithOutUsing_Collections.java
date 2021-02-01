@@ -5,7 +5,7 @@ public class OccuranceOfEachCharacterInAString_WithOutUsing_Collections {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s = "Make Selenium Easy".toLowerCase();
+		String s = "abcab".toLowerCase();
 
 		while (s.length() >= 1) {
 

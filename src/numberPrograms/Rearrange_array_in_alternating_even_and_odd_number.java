@@ -20,7 +20,7 @@ public class Rearrange_array_in_alternating_even_and_odd_number {
 		System.out.println(Arrays.toString(arr));
 		
 		int even = index+1, odd =0;
-		while(even<arr.length&&arr[odd]!=0&&odd<even){
+		while(even<arr.length&&odd<even){
 			temp = arr[odd];
 			arr[odd] = arr[even];
 			arr[even] = temp;

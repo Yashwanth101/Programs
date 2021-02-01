@@ -1,6 +1,6 @@
 package stringPrograms;
 
-public class Program_to_Remove_Duplicate_Characters_From_Word_Without_Using_Collection_Concept {
+public class Remove_Duplicate_Characters_From_String_Without_Using_Collection_Concept {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

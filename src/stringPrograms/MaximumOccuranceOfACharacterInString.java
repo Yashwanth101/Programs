@@ -1,12 +1,16 @@
 package stringPrograms;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 public class MaximumOccuranceOfACharacterInString {
 
@@ -33,10 +37,14 @@ public class MaximumOccuranceOfACharacterInString {
 		System.out.println(m);
 		
 		
-		LinkedList<Integer> ll = new LinkedList<>(m.values());
-		Collections.sort(ll);
+		List<Integer> ll = new ArrayList<Integer>(m.values());
+		ll = (ArrayList<Integer>) (ll.stream().distinct().sorted().collect(Collectors.toList()));
+		System.out.println(ll);
 		int Smin = ll.get(1);
-		int max = ll.getLast();
+		int max = ll.get(ll.size()-1);
+		
+		
+		
 		
 		for(Map.Entry<Character, Integer> l:m.entrySet()){
 			if(l.getValue()==max){

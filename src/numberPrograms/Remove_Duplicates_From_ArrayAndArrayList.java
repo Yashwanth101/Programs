@@ -76,6 +76,19 @@ public static HashMap<Integer, String> sortByValue(HashMap<Integer, String> hm){
 	        System.out.println("Key = " + en.getKey() +  
 	                      ", Value = " + en.getValue()); 
 	    }
+		
+		ArrayList<Integer> i = new ArrayList<>();
+		i.add(1);
+		i.add(-1);
+		i.add(-10);
+		i.add(100);
+		i.add(1000);
+		
+		i = (ArrayList<Integer>) i.stream().distinct().sorted().collect(Collectors.toList());
+		System.out.println(i);
+		System.out.println(i.get(0));
+		
+		
 
 	}
 

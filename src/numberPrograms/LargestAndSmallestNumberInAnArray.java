@@ -1,7 +1,5 @@
 package numberPrograms;
 
-import javax.swing.text.StyleContext.SmallAttributeSet;
-
 public class LargestAndSmallestNumberInAnArray {
 	
 	//Smallest Number in an Array

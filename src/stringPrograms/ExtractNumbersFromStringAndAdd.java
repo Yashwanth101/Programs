@@ -7,7 +7,7 @@ public class ExtractNumbersFromStringAndAdd {
 		
 		String s = "ABCabc12345!@";
 		
-		String onlyNumbers = s.replaceAll("\\D","");
+		String onlyNumbers = s.replaceAll("[^0-9]","");
 		
 		int sum = 0;
 		

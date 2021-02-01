@@ -3,6 +3,7 @@ package numberPrograms;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 /*
  *   Add an whole array1 to the Array List and then compare in the 
@@ -75,6 +76,15 @@ public class Union_Of_Multiple_Arrays {
 		System.out.println(hashSet);
 		
 	}
+	
+	static void union_InTwoArrays(int a[], int b []){
+		
+		HashSet<Integer> hashSet1  = (HashSet<Integer>) Arrays.stream(a).boxed().collect(Collectors.toSet());
+		hashSet1.addAll((HashSet<Integer>) Arrays.stream(b).boxed().collect(Collectors.toSet())); 
+		System.out.println(hashSet1);
+		
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -85,6 +95,7 @@ public class Union_Of_Multiple_Arrays {
 		//Using Collections class
 		union_Using_Collections(new int[] {1,2,4},new int[] {3,4,5,6}, new int[] {3,4,7,8}, new int[] {9,10,3,11});
 		
+		union_InTwoArrays(new int[] {1,2,4},new int[] {3,4,5,6});
 
 	}
 

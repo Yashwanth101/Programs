@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 //http://makeseleniumeasy.com/2018/08/24/frequently-asked-java-program-20-java-program-to-find-missing-alphabets-in-given-string/
 
-public class Program_To_Find_Missing_Alphabets_In_Given_String {
+public class Find_Missing_Alphabets_In_Given_String {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

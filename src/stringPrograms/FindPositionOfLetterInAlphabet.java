@@ -1,6 +1,13 @@
 package stringPrograms;
 
+/*
+ * String s = "abcdef"
+ * output == 123456
+ */
+
 public class FindPositionOfLetterInAlphabet {
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

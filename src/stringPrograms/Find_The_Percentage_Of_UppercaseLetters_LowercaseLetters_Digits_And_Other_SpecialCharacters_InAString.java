@@ -1,6 +1,6 @@
 package stringPrograms;
 
-public class Program_To_Find_The_Percentage_Of_UppercaseLetters_LowercaseLetters_Digits_And_Other_SpecialCharacters_InAString {
+public class Find_The_Percentage_Of_UppercaseLetters_LowercaseLetters_Digits_And_Other_SpecialCharacters_InAString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
